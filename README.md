@@ -1,24 +1,29 @@
 
 # Scala Workshop - Tech Meetup 2014
 
-## Ejercicio 1
+## Exercise 1
 
-#### Objetivo
+#### Goal
 
-En `src/test/resources` encontrarás un archivo de texto, `HistorySong.txt`. Este archivo contiene texto en un formato semi estructurado. Es decir, algunas líneas respetan una estructura y otras no.
+En `src/test/resources` you will find a text file, `HistorySong.txt`. This file contains text in a semi-structured format. That is, some lines have some structure and others not.
 
-El contenido es una transcripción (menos algunos datos) de un archivo originalmente generado para analizar la performance de un sistema real; un recommender para una radio online.
+The content is a transcription (less some data) of a file originally generated to analyze the performance of a real system: a recommender for an online radio.
 
-El objetivo es detectar si existen canciones duplicadas y si las hubiere emitir cuales son, cuantas son y cuantas veces aparece cada una. Alcanza con emitir los ids (columnas song id o seed id).
+The goal of the exercise is detecting if there are duplicated songs, and if there are: 
+* Emit which ones.
+* How many distinct songs (not entries, songs).
+* How many times each one is repeated.
 
-#### Implementación y Tests
+It is enough to emit ids (columns song id or seed id).
 
-En `src/test/scala/` encontrarás un archivo `DuplictesTest` con los tests vacíos para validar la implementación.
-En `src/main/scala` el archivo `Duplicates` con funciones sin implementación para completar.
+#### Tests and implementation
 
-#### Técnicas que puedes aplicar
+In `src/test/scala/` you will find a file `DuplicatesTest` with the tests to validate the implementation.
+In `src/test/scala/` in the file `Duplicates` you will find stub functions which you need to complete.
 
-* String splitting y pattern matching contra arrays
-* Pattern matching contra expresiones regulares.
+#### Some suggested techniques 
+
+* String splitting and pattern matching against arrays.
+* Pattern matching with regular expressions.
 
 
